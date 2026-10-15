@@ -1,0 +1,6 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+:root{--ink:250 246 239;--panel:240 232 220;--gold:154 103 14;--pearl:45 41 38;--hero:linear-gradient(180deg,#FAF6EF,#C5D6CB)} /* fallback; real values come from config/theme.js */
+body{@apply bg-ink text-pearl antialiased}
+input,select,textarea,button{font-family:inherit;font-size:16px}
+:focus-visible{outline:2px solid rgb(var(--gold));outline-offset:2px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
